@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>About – Shanjaykarthick S | Developer & CS Student</title>
+  <meta name="description" content="Learn more about Shanjaykarthick S – a Computer Science student, developer, and lifelong learner passionate about technology, accessibility, and impactful software.">
+  <meta name="author" content="Shanjaykarthick S">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7c3aed">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About – Shanjaykarthick S">
+  <meta property="og:description" content="A Computer Science student passionate about building accessible, modern web applications.">
+  <meta property="og:image" content="profile.png">
+  <meta property="og:url" content="https://shanjaykarthick.dev/about.html">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://shanjaykarthick.dev/about.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylessheet.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shanjaykarthick S",
+    "url": "https://shanjaykarthick.dev/about.html",
+    "email": "shanjaykarthickmec19@gmail.com",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Muthayammal Engineering College"
+    },
+    "sameAs": [
+      "https://github.com/Shanjaykarthick",
+      "https://www.linkedin.com/in/shanjaykarthick-s-86a410338/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════ SITE HEADER ═══════ -->
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Primary navigation">
+        <a href="index.html" class="nav-logo" aria-label="Shanjaykarthick – Home">
+          <span>&lt;SK /&gt;</span>
+        </a>
+        <!-- Controls (Theme Toggle & Mobile Menu) -->
+        <div class="nav-controls">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" aria-live="polite">
+            <!-- Moon Icon -->
+            <svg class="theme-icon-dark" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <!-- Sun Icon -->
+            <svg class="theme-icon-light" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+
+          <!-- Mobile Toggle -->
+          <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta btn">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════ MAIN CONTENT ═══════ -->
+  <main id="main-content" class="page-main" role="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <p class="section-label" style="justify-content: center;" aria-hidden="true">Get to Know Me</p>
+        <h1 class="page-hero-title gradient-text" id="page-heading">About Me</h1>
+        <p class="page-hero-subtitle">A curious mind building things that matter with code, creativity, and care.</p>
+      </div>
+    </section>
+
+    <div class="page-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ── About Content ── -->
+    <section class="section" aria-labelledby="about-heading" style="padding-top: 0;">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Profile Image Column -->
+          <aside class="about-image-wrapper" aria-label="Status badges">
+            <div class="about-badges" role="list" aria-label="Current status and interests">
+              <span class="badge active" role="listitem">
+                <span aria-hidden="true">🟢</span> Open to Opportunities
+              </span>
+              <span class="badge" role="listitem">🎓 CS Student</span>
+              <span class="badge" role="listitem">💻 Developer</span>
+             
+              <span class="badge" role="listitem">🇮🇳 Tamil Nadu, Bangalore India</span>
+            </div>
+          </aside>
+
+          <!-- Content Column -->
+          <div class="about-content">
+            <h2 id="about-heading" style="margin-bottom: 1.5rem;">
+              Shanjaykarthick S
+              <span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted); display: block; margin-top: 0.25rem; font-family: var(--font-mono);">@Shanjaykarthick</span>
+            </h2>
+
+            <div class="about-bio" aria-label="Personal biography">
+              <p>
+                I'm a passionate <strong style="color: var(--color-text-primary);">Computer Science student</strong> with a deep love for technology and building things that make people's lives better. My journey in tech started with curiosity about how websites work, and it quickly grew into a full-blown passion for development, design, and problem-solving.
+              </p>
+              <p>
+                I believe that great software should not only function flawlessly but also be <strong style="color: var(--color-text-primary);">accessible to everyone</strong>. That's why I follow WCAG guidelines strictly in every project I build — because the web should be for all people, not just those without disabilities.
+              </p>
+              <p>
+                When I'm not writing code, you'll find me exploring new technologies, contributing to open source, or sharpening my problem-solving skills through competitive programming and data structures challenges.
+              </p>
+            </div>
+
+            <!-- Details Grid -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <div class="card" style="padding: 1rem 1.25rem;">
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.25rem;">EMAIL</p>
+                <a href="mailto:shanjaykarthickmec19@gmail.com" style="font-size: 0.85rem; color: var(--color-accent-tertiary); word-break: break-all;">shanjaykarthickmec19@gmail.com</a>
+              </div>
+              <div class="card" style="padding: 1rem 1.25rem;">
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.25rem;">GITHUB</p>
+                <a href="https://github.com/Shanjaykarthick" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: var(--color-accent-tertiary);">@Shanjaykarthick</a>
+              </div>
+              <div class="card" style="padding: 1rem 1.25rem;">
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.25rem;">LINKEDIN</p>
+                <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: var(--color-accent-tertiary);">shanjaykarthick-s</a>
+              </div>
+              <div class="card" style="padding: 1rem 1.25rem;">
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.25rem;">LOCATION</p>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;">
+              <a href="https://github.com/Shanjaykarthick" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View Shanjaykarthick's GitHub profile (opens in new tab)">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+                GitHub Profile
+              </a>
+              <a href="https://leetcode.com/u/SHANJAYKATHICK/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="View Shanjaykarthick's LeetCode profile (opens in new tab)">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                LeetCode
+              </a>
+              <a href="contact.html" class="btn btn-secondary" aria-label="Navigate to the contact page">
+                Let's Connect
+              </a>
+            </div>
+
+            <!-- Education -->
+            <section aria-labelledby="education-heading">
+              <h3 id="education-heading" style="margin-bottom: 1.5rem; color: var(--color-text-primary);">Education</h3>
+              <nav aria-label="Education timeline">
+                <ol class="timeline" role="list">
+                  <li class="timeline-item" role="listitem">
+                    <p class="timeline-date">2024 – Present</p>
+                    <h4 class="timeline-title">B.E. Computer Science &amp; Engineering</h4>
+                    <p class="timeline-institution">Muthayammal Engineering College, Rasipuram</p>
+                  </li>
+                  <li class="timeline-item" role="listitem">
+                    <p class="timeline-date">2023 – 2024</p>
+                    <h4 class="timeline-title">Higher Secondary Certificate (HSC)</h4>
+                    <p class="timeline-institution">Tamil Nadu State Board</p>
+                  </li>
+                  <li class="timeline-item" role="listitem">
+                    <p class="timeline-date">2021 – 2022</p>
+                    <h4 class="timeline-title">Secondary School Certificate (SSLC)</h4>
+                    <p class="timeline-institution">Tamil Nadu State Board</p>
+                  </li>
+                </ol>
+              </nav>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills Deep Dive ── -->
+    <section class="section" aria-labelledby="skills-deep-heading" style="padding-top: 0;">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Expertise</p>
+        <h2 class="section-title" id="skills-deep-heading">Technical Skills</h2>
+        <p class="section-subtitle">A comprehensive look at the technologies I've worked with and studied.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+
+          <article class="card fade-in" aria-label="Frontend Development skills">
+            <h3 style="margin-bottom: 1.25rem; font-size: 1rem; color: var(--color-accent-tertiary); font-family: var(--font-mono);">// Frontend</h3>
+            <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🌐</span> HTML5</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🎨</span> CSS3</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">⚡</span> JavaScript</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">📱</span> Responsive</div>
+            </div>
+          </article>
+
+          <article class="card fade-in" aria-label="Programming Languages skills">
+            <h3 style="margin-bottom: 1.25rem; font-size: 1rem; color: var(--color-accent-secondary); font-family: var(--font-mono);">// Languages</h3>
+            <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🐍</span> Python</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">☕</span> Java</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🔵</span> C</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🗃️</span> SQL</div>
+            </div>
+          </article>
+
+          <article class="card fade-in" aria-label="Tools and technologies skills">
+            <h3 style="margin-bottom: 1.25rem; font-size: 1rem; color: var(--color-accent-primary); font-family: var(--font-mono);">// Tools</h3>
+            <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🐱</span> Git</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🐙</span> GitHub</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">♿</span> WCAG</div>
+              <div class="skill-chip"><span class="skill-icon" aria-hidden="true">🔍</span> SEO</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Interests ── -->
+    <section class="section" aria-labelledby="interests-heading" style="padding-top: 0; padding-bottom: 4rem;">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Beyond Code</p>
+        <h2 class="section-title" id="interests-heading">Interests &amp; Hobbies</h2>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;" role="list" aria-label="Personal interests">
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">🏆 Competitive Programming</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">📚 Tech Blogs &amp; Articles</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">🎮 Problem Solving</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">🌐 Open Source</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">🎵 Music</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">📷 Photography</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">♟️ Chess</span>
+          <span class="badge" role="listitem" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">🚀 Space &amp; Science</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════ SITE FOOTER ═══════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><strong>Shanjaykarthick S</strong></div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Social media footer links">
+          <div class="footer-social">
+            <a href="https://github.com/Shanjaykarthick" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Shanjaykarthick S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    const toggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+      const isOpen = navList.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav') && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

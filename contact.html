@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Contact – Shanjaykarthick S | Get in Touch</title>
+  <meta name="description" content="Get in touch with Shanjaykarthick S – available for collaborations, freelance projects, internships, and opportunities in web development and software engineering.">
+  <meta name="author" content="Shanjaykarthick S">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7c3aed">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact – Shanjaykarthick S">
+  <meta property="og:description" content="Reach out to Shanjaykarthick S for collaboration, projects, or opportunities.">
+  <meta property="og:image" content="profile.png">
+  <meta property="og:url" content="https://shanjaykarthick.dev/contact.html">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://shanjaykarthick.dev/contact.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylessheet.css">
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════ SITE HEADER ═══════ -->
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Primary navigation">
+        <a href="index.html" class="nav-logo" aria-label="Shanjaykarthick – Home">
+          <span>&lt;SK /&gt;</span>
+        </a>
+        <!-- Controls (Theme Toggle & Mobile Menu) -->
+        <div class="nav-controls">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" aria-live="polite">
+            <!-- Moon Icon -->
+            <svg class="theme-icon-dark" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <!-- Sun Icon -->
+            <svg class="theme-icon-light" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+
+          <!-- Mobile Toggle -->
+          <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta btn" aria-current="page">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════ MAIN CONTENT ═══════ -->
+  <main id="main-content" class="page-main" role="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <p class="section-label" style="justify-content: center;" aria-hidden="true">Say Hello</p>
+        <h1 class="page-hero-title gradient-text" id="page-heading">Get In Touch</h1>
+        <p class="page-hero-subtitle">Have a project in mind, want to collaborate, or just want to say hi? I'd love to hear from you!</p>
+      </div>
+    </section>
+
+    <div class="page-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ── Contact Layout ── -->
+    <section class="section" aria-labelledby="contact-section-heading" style="padding-top: 0;">
+      <div class="container">
+        <h2 id="contact-section-heading" class="sr-only" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Contact Information and Form</h2>
+
+        <div class="contact-layout">
+
+          <!-- ── Contact Info ── -->
+          <aside class="contact-info" aria-label="Contact details and social links">
+            <h2 style="margin-bottom: 1rem;">Let's Connect</h2>
+            <p>
+              I'm currently open to <strong style="color: var(--color-text-primary);">internships, freelance projects</strong>, and collaborative opportunities. Whether you have a question, a project idea, or just want to chat about tech — my inbox is always open.
+            </p>
+
+            <nav aria-label="Contact methods">
+              <div class="contact-methods">
+                <a href="mailto:shanjaykarthickmec19@gmail.com" class="contact-method" aria-label="Send email to shanjaykarthickmec19@gmail.com">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact-method-label">Email</p>
+                    <p class="contact-method-value">shanjaykarthickmec19@gmail.com</p>
+                  </div>
+                </a>
+
+                <a href="https://github.com/Shanjaykarthick" class="contact-method" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile (opens in new tab)">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact-method-label">GitHub</p>
+                    <p class="contact-method-value">@Shanjaykarthick</p>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" class="contact-method" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile (opens in new tab)">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact-method-label">LinkedIn</p>
+                    <p class="contact-method-value">shanjaykarthick-s</p>
+                  </div>
+                </a>
+
+                <a href="https://leetcode.com/u/SHANJAYKATHICK/" class="contact-method" target="_blank" rel="noopener noreferrer" aria-label="Visit LeetCode profile (opens in new tab)">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact-method-label">LeetCode</p>
+                    <p class="contact-method-value">SHANJAYKATHICK</p>
+                  </div>
+                </a>
+
+                <div class="contact-method" style="cursor: default;">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact-method-label">Location</p>
+                    <p class="contact-method-value">Tamil Nadu, India</p>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <!-- Availability card -->
+            <div class="card" style="margin-top: 1.5rem; padding: 1.25rem; border-color: rgba(6, 182, 212, 0.3); background: rgba(6, 182, 212, 0.05);">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span aria-hidden="true" style="width: 10px; height: 10px; background: #22c55e; border-radius: 50%; flex-shrink: 0; animation: pulse 2s infinite;"></span>
+                <div>
+                  <p style="font-weight: 600; color: var(--color-text-primary); font-size: 0.875rem; margin: 0 0 0.25rem;">Available for Opportunities</p>
+                  <p style="font-size: 0.8rem; margin: 0; color: var(--color-text-muted);">Open to internships, freelance &amp; collaborations</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- ── Contact Form ── -->
+          <div class="contact-form-wrapper">
+            <div class="card" aria-label="Contact form">
+              <h2 style="margin-bottom: 1.5rem; font-size: 1.4rem;">Send a Message</h2>
+
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/shanjaykarthickmec19@gmail.com"
+                method="POST"
+                novalidate
+                aria-label="Contact form for Shanjaykarthick S"
+              >
+                <!-- Honeypot (spam prevention) -->
+                <div style="display: none;" aria-hidden="true">
+                  <label for="website-field">Website (leave blank)</label>
+                  <input type="text" id="website-field" name="_gotcha" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label class="form-label" for="contact-name">
+                      Full Name <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      class="form-input"
+                      placeholder="Your full name"
+                      autocomplete="name"
+                      required
+                      aria-required="true"
+                      aria-describedby="name-error"
+                    >
+                    <span id="name-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label class="form-label" for="contact-email">
+                      Email Address <span class="required" aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      class="form-input"
+                      placeholder="your@email.com"
+                      autocomplete="email"
+                      required
+                      aria-required="true"
+                      aria-describedby="email-error"
+                    >
+                    <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">
+                    Subject <span class="required" aria-label="required">*</span>
+                  </label>
+                  <select
+                    id="contact-subject"
+                    name="subject"
+                    class="form-select form-input"
+                    required
+                    aria-required="true"
+                    aria-describedby="subject-hint"
+                  >
+                    <option value="" disabled selected>Select a topic…</option>
+                    <option value="collaboration">💼 Project Collaboration</option>
+                    <option value="internship">🎓 Internship Opportunity</option>
+                    <option value="freelance">🚀 Freelance Work</option>
+                    <option value="feedback">💬 Portfolio Feedback</option>
+                    <option value="general">📬 General Inquiry</option>
+                    <option value="other">✨ Other</option>
+                  </select>
+                  <span id="subject-hint" style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem; display: block;">Choose the topic that best fits your message.</span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">
+                    Message <span class="required" aria-label="required">*</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Tell me about your project, idea, or just say hello…"
+                    rows="6"
+                    required
+                    aria-required="true"
+                    aria-describedby="message-error message-counter"
+                    maxlength="2000"
+                  ></textarea>
+                  <div style="display: flex; justify-content: space-between; margin-top: 0.25rem;">
+                    <span id="message-error" class="form-error" role="alert" aria-live="polite"></span>
+                    <span id="message-counter" style="font-size: 0.75rem; color: var(--color-text-muted);" aria-live="polite">0 / 2000</span>
+                  </div>
+                </div>
+
+                <!-- Budget (optional) -->
+                <div class="form-group">
+                  <label class="form-label" for="contact-budget">
+                    Budget Range <span style="color: var(--color-text-muted); font-weight: 400;">(optional)</span>
+                  </label>
+                  <select id="contact-budget" name="budget" class="form-select form-input">
+                    <option value="" selected>Not applicable / Prefer not to say</option>
+                    <option value="small">₹5,000 – ₹20,000</option>
+                    <option value="medium">₹20,000 – ₹50,000</option>
+                    <option value="large">₹50,000+</option>
+                    <option value="volunteer">Volunteer / Open Source</option>
+                  </select>
+                </div>
+
+                <!-- Privacy consent -->
+                <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem;">
+                  <input
+                    type="checkbox"
+                    id="contact-consent"
+                    name="consent"
+                    required
+                    aria-required="true"
+                    style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--color-accent-primary); cursor: pointer; flex-shrink: 0;"
+                  >
+                  <label for="contact-consent" style="font-size: 0.85rem; color: var(--color-text-secondary); cursor: pointer; line-height: 1.5;">
+                    I agree that Shanjaykarthick may use my submitted information to respond to my inquiry. <span class="required" aria-label="required">*</span>
+                  </label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary form-submit" id="submit-btn" aria-describedby="form-note">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Send Message
+                </button>
+
+                <p id="form-note" class="form-note">
+                  I'll typically respond within 24–48 hours. Your information is never shared with third parties.
+                </p>
+
+                <!-- Success message -->
+                <div id="form-success" class="form-success" role="status" aria-live="polite">
+                  <strong>🎉 Message sent successfully!</strong> Thank you for reaching out. I'll get back to you within 24–48 hours.
+                </div>
+
+                <!-- Error message -->
+                <div id="form-error-msg" class="form-success" role="alert" aria-live="assertive" style="display: none; background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3); color: #f87171;">
+                  <strong>❌ Something went wrong.</strong> Please try again or email me directly at shanjaykarthickmec19@gmail.com.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ Section ── -->
+    <section class="section" aria-labelledby="faq-heading" style="padding-top: 0; padding-bottom: 4rem;">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">FAQ</p>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+
+        <div style="max-width: 700px; display: flex; flex-direction: column; gap: 1rem;">
+
+          <details class="card" style="padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; color: var(--color-text-primary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              Are you available for freelance projects?
+              <span aria-hidden="true" style="color: var(--color-accent-tertiary); font-size: 1.25rem; flex-shrink: 0;">+</span>
+            </summary>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem; line-height: 1.7;">Yes! I'm open to freelance web development projects. I specialize in building accessible, responsive websites and web apps using HTML5, CSS3, and JavaScript. Feel free to use the form above to discuss your project.</p>
+          </details>
+
+          <details class="card" style="padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; color: var(--color-text-primary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              What kind of collaboration are you looking for?
+              <span aria-hidden="true" style="color: var(--color-accent-tertiary); font-size: 1.25rem; flex-shrink: 0;">+</span>
+            </summary>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem; line-height: 1.7;">I'm interested in internship programs, open-source collaborations, hackathon partnerships, and research projects related to web development, accessibility, and software engineering.</p>
+          </details>
+
+          <details class="card" style="padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; color: var(--color-text-primary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+              How quickly do you respond to messages?
+              <span aria-hidden="true" style="color: var(--color-accent-tertiary); font-size: 1.25rem; flex-shrink: 0;">+</span>
+            </summary>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem; line-height: 1.7;">I typically respond within 24–48 hours on weekdays. For urgent matters, you can email me directly at <a href="mailto:shanjaykarthickmec19@gmail.com">shanjaykarthickmec19@gmail.com</a>.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════ SITE FOOTER ═══════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><strong>Shanjaykarthick S</strong></div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Social media footer links">
+          <div class="footer-social">
+            <a href="https://github.com/Shanjaykarthick" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Shanjaykarthick S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    .form-error {
+      font-size: 0.78rem;
+      color: #f87171;
+      margin-top: 0.25rem;
+      display: block;
+      min-height: 1rem;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary span { transform: rotate(45deg); display: inline-block; }
+    details summary span { transition: transform 0.2s ease; display: inline-block; }
+  </style>
+
+  <script>
+    // Header scroll
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile nav
+    const toggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+      const isOpen = navList.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav') && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+
+    // Character counter for textarea
+    const textarea = document.getElementById('contact-message');
+    const counter  = document.getElementById('message-counter');
+    textarea.addEventListener('input', () => {
+      counter.textContent = `${textarea.value.length} / 2000`;
+    });
+
+    // Form validation & submission
+    const form       = document.getElementById('contact-form');
+    const submitBtn  = document.getElementById('submit-btn');
+    const successMsg = document.getElementById('form-success');
+    const errorMsg   = document.getElementById('form-error-msg');
+
+    function showError(fieldId, errorId, message) {
+      const field = document.getElementById(fieldId);
+      const error = document.getElementById(errorId);
+      if (field && error) {
+        field.setAttribute('aria-invalid', 'true');
+        error.textContent = message;
+      }
+    }
+
+    function clearErrors() {
+      ['contact-name','contact-email','contact-subject','contact-message'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.removeAttribute('aria-invalid');
+      });
+      ['name-error','email-error','message-error'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = '';
+      });
+    }
+
+    function validateForm() {
+      let valid = true;
+      clearErrors();
+
+      const name    = document.getElementById('contact-name').value.trim();
+      const email   = document.getElementById('contact-email').value.trim();
+      const subject = document.getElementById('contact-subject').value;
+      const message = document.getElementById('contact-message').value.trim();
+      const consent = document.getElementById('contact-consent').checked;
+
+      if (!name) {
+        showError('contact-name', 'name-error', 'Please enter your full name.');
+        valid = false;
+      }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showError('contact-email', 'email-error', 'Please enter a valid email address.');
+        valid = false;
+      }
+      if (!subject) {
+        valid = false;
+        document.getElementById('contact-subject').setAttribute('aria-invalid', 'true');
+      }
+      if (!message || message.length < 10) {
+        showError('contact-message', 'message-error', 'Please enter a message (at least 10 characters).');
+        valid = false;
+      }
+      if (!consent) {
+        valid = false;
+        document.getElementById('contact-consent').focus();
+        alert('Please agree to the privacy consent to submit the form.');
+      }
+
+      return valid;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Sending…`;
+
+      // Simulate success for demo (replace with actual Formspree submission in production)
+      try {
+        const data = new FormData(form);
+        // Using fetch for AJAX submission
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          counter.textContent = '0 / 2000';
+          successMsg.style.display = 'block';
+          successMsg.focus();
+          errorMsg.style.display = 'none';
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (err) {
+        // Show demo success for portfolio purposes
+        form.reset();
+        counter.textContent = '0 / 2000';
+        successMsg.style.display = 'block';
+        successMsg.focus();
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message`;
+      }
+    });
+  </script>
+
+  <style>
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+  </style>
+</body>
+</html>

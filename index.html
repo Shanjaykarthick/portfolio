@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Shanjaykarthick S | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Shanjaykarthick S – Computer Science student & passionate developer specializing in web development, problem solving, and building creative digital experiences.">
+  <meta name="author" content="Shanjaykarthick S">
+  <meta name="keywords" content="Shanjaykarthick, portfolio, web developer, computer science, HTML, CSS, JavaScript, GitHub">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7c3aed">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shanjaykarthick.dev/">
+  <meta property="og:title" content="Shanjaykarthick S | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Computer Science student & developer passionate about building accessible, modern web experiences.">
+  <meta property="og:image" content="profile.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shanjaykarthick S | Portfolio">
+  <meta name="twitter:description" content="Computer Science student & developer passionate about building accessible, modern web experiences.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://shanjaykarthick.dev/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylessheet.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shanjaykarthick S",
+    "url": "https://shanjaykarthick.dev/",
+    "email": "shanjaykarthickmec19@gmail.com",
+    "sameAs": [
+      "https://github.com/Shanjaykarthick",
+      "https://www.linkedin.com/in/shanjaykarthick-s-86a410338/"
+    ],
+    "jobTitle": "Full-Stack Developer",
+    "description": "Computer Science student and developer passionate about web development and accessible digital experiences."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════ SITE HEADER ═══════ -->
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Primary navigation">
+
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="Shanjaykarthick – Home">
+          <span>&lt;SK /&gt;</span>
+        </a>
+
+        <!-- Controls (Theme Toggle & Mobile Menu) -->
+        <div class="nav-controls">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" aria-live="polite">
+            <!-- Moon Icon -->
+            <svg class="theme-icon-dark" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <!-- Sun Icon -->
+            <svg class="theme-icon-light" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+
+          <!-- Mobile Toggle -->
+          <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta btn">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════ MAIN CONTENT ═══════ -->
+  <main id="main-content" class="page-main" role="main">
+
+    <!-- ── HERO SECTION ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid" style="grid-template-columns: 1fr; text-align: center;">
+
+          <!-- Text Content -->
+          <div class="hero-content">
+            <p class="hero-eyebrow" aria-label="Status: Available for opportunities">
+              Available for Opportunities
+            </p>
+
+            <h1 class="hero-title" id="hero-heading">
+              Hi, I'm
+              <span class="name">Shanjaykarthick&nbsp;S</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              A passionate <span class="hero-highlight">Computer Science student</span> &amp;
+              developer who loves crafting
+              <span class="hero-highlight">accessible, performant</span> web experiences
+              that make a real difference.
+            </p>
+
+            <div class="hero-actions" style="justify-content: center;">
+              <a href="projects.html" class="btn btn-primary" aria-label="View my projects portfolio">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                View Projects
+              </a>
+              <a href="contact.html" class="btn btn-secondary" aria-label="Get in touch with me">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Get in Touch
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <nav aria-label="Social media links">
+              <div class="hero-social" style="justify-content: center;">
+                <a href="https://github.com/Shanjaykarthick" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="mailto:shanjaykarthickmec19@gmail.com" class="social-link" aria-label="Send email to Shanjaykarthick">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="https://leetcode.com/u/SHANJAYKATHICK/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile (opens in new tab)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                </a>
+              </div>
+            </nav>
+
+            <!-- Stats -->
+            <div class="hero-stats" role="list" aria-label="Portfolio statistics" style="justify-content: center;">
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Repositories</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">100</span>
+                <span class="stat-label">Lighthouse Score</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT I DO SECTION ── -->
+    <section class="section" aria-labelledby="features-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">What I Do</p>
+        <h2 class="section-title" id="features-heading">Building Digital Experiences</h2>
+        <p class="section-subtitle">I combine technical skill with creative thinking to build web solutions that are fast, accessible, and beautiful.</p>
+
+        <div class="featured-grid" role="list">
+
+          <article class="card feature-card fade-in" role="listitem">
+            <span class="feature-icon" aria-hidden="true">🌐</span>
+            <h3 class="feature-title">Web Development</h3>
+            <p class="feature-desc">Building modern, responsive websites and web applications using the latest standards and best practices in HTML5, CSS3, and JavaScript.</p>
+          </article>
+
+          <article class="card feature-card fade-in" role="listitem">
+            <span class="feature-icon" aria-hidden="true">♿</span>
+            <h3 class="feature-title">Accessible Design</h3>
+            <p class="feature-desc">Every project I build is crafted with WCAG guidelines in mind — semantic HTML, ARIA roles, keyboard navigation, and screen reader support.</p>
+          </article>
+
+          <article class="card feature-card fade-in" role="listitem">
+            <span class="feature-icon" aria-hidden="true">🚀</span>
+            <h3 class="feature-title">Performance Focus</h3>
+            <p class="feature-desc">Optimized code, efficient assets, and thoughtful architecture to deliver lightning-fast experiences with great Core Web Vitals scores.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS OVERVIEW ── -->
+    <section class="section" aria-labelledby="skills-heading" style="padding-top: 0;">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Tech Stack</p>
+        <h2 class="section-title" id="skills-heading">Skills &amp; Technologies</h2>
+        <p class="section-subtitle">The tools and technologies I work with to bring ideas to life.</p>
+
+        <div class="skills-grid" role="list" aria-label="Technologies I know">
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🌐</span> HTML5</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🎨</span> CSS3</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">⚡</span> JavaScript</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🐍</span> Python</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">☕</span> Java</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🗃️</span> SQL</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🐱</span> Git &amp; GitHub</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">📱</span> Responsive Design</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">♿</span> Accessibility (WCAG)</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🔍</span> SEO Best Practices</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🧪</span> Problem Solving</div>
+          <div class="skill-chip fade-in" role="listitem"><span class="skill-icon" aria-hidden="true">🎯</span> Data Structures</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA SECTION ── -->
+    <section class="section" aria-labelledby="cta-heading" style="padding-top: 0;">
+      <div class="container" style="text-align: center;">
+        <div class="card" style="max-width: 620px; margin: 0 auto; padding: 3rem 2rem;">
+          <h2 id="cta-heading" style="margin-bottom: 1rem;">Let's Work Together</h2>
+          <p style="margin-bottom: 1.5rem; max-width: 40ch; margin-left: auto; margin-right: auto;">
+            I'm always open to new projects, collaborations, and opportunities. Let's build something amazing!
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+            <a href="https://github.com/Shanjaykarthick" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════ SITE FOOTER ═══════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <strong>Shanjaykarthick S</strong>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Social media footer links">
+          <div class="footer-social">
+            <a href="https://github.com/Shanjaykarthick" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shanjaykarthick-s-86a410338/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/SHANJAYKATHICK/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </a>
+          </div>
+        </nav>
+
+        <p class="footer-copy">
+          &copy; 2025 Shanjaykarthick S. Crafted with ❤️ &amp; accessible HTML5.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ SCRIPTS ═══════ -->
+  <script>
+    // Sticky header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+      const isOpen = navList.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    // Close nav on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav') && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Close nav on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+
+    // Intersection Observer for fade-in animations
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
